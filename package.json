@@ -2,9 +2,10 @@
   "name": "react-fetch-page",
   "version": "0.0.1",
   "description": "React component for server-side paging",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
+    "format": "prettier --write \"src/**/*.tsx\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/chkal/react-fetch-page#readme",
   "devDependencies": {
     "@types/react": "^16.4.14",
+    "prettier": "^1.14.2",
     "react": "^16.5.2",
     "typescript": "^3.0.3"
   },
