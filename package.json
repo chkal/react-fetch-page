@@ -5,8 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.tsx\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"src/**/*.ts*\" \"stories/**/*.js*\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -23,11 +25,18 @@
   },
   "homepage": "https://github.com/chkal/react-fetch-page#readme",
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-links": "^3.4.11",
+    "@storybook/addons": "^3.4.11",
+    "@storybook/react": "^3.4.11",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
     "prettier": "^1.14.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "ts-loader": "^3.5.0",
     "typescript": "^3.0.3"
   },
   "dependencies": {}
